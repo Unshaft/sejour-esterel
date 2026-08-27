@@ -139,30 +139,9 @@ export default function Page() {
           </div>
         </header>
 
-        {/* ── Le carnet d'adresses ───────────────────────────────────── */}
-        <section id="logements" className="max-w-6xl mx-auto px-6 md:px-14 pt-10 md:pt-16 pb-20 scroll-mt-20">
-          <div className="scroll-animate">
-            <p className="font-label text-[11px] font-medium uppercase tracking-[0.32em] text-wedding-vert">
-              Chapitre&nbsp;Ⅰ
-            </p>
-            <h2
-              className="font-heading text-wedding-text mt-3 leading-[1.08]"
-              style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)' }}
-            >
-              Le carnet d&apos;adresses
-            </h2>
-            <p className="mt-4 text-wedding-text-light max-w-[58ch]">
-              Filtrez par distance, budget ou type de logement, mettez de côté vos coups de cœur,
-              puis réservez directement auprès de l&apos;établissement.
-            </p>
-          </div>
-
-          <div className="mt-8">
-            <LogementsExplorer />
-          </div>
-        </section>
-
         {/* ── Conseils ───────────────────────────────────────────────── */}
+        {/* Les indications viennent avant la liste : on lit d'abord comment
+            choisir, on choisit ensuite. */}
         <section
           id="conseils"
           className="border-t border-wedding-vert-dark/12 scroll-mt-24"
@@ -171,7 +150,7 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-8 md:px-14 py-16 md:py-24">
             <div className="scroll-animate">
               <p className="font-label text-[11px] font-medium uppercase tracking-[0.32em] text-wedding-vert">
-                Chapitre&nbsp;Ⅱ
+                Chapitre&nbsp;Ⅰ
               </p>
               <h2
                 className="font-heading text-wedding-text mt-3 leading-[1.08]"
@@ -234,6 +213,32 @@ export default function Page() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ── Le carnet d'adresses ───────────────────────────────────── */}
+        <section
+          id="logements"
+          className="max-w-6xl mx-auto px-6 md:px-14 pt-14 md:pt-20 pb-20 scroll-mt-20"
+        >
+          <div className="scroll-animate">
+            <p className="font-label text-[11px] font-medium uppercase tracking-[0.32em] text-wedding-vert">
+              Chapitre&nbsp;Ⅱ
+            </p>
+            <h2
+              className="font-heading text-wedding-text mt-3 leading-[1.08]"
+              style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)' }}
+            >
+              Le carnet d&apos;adresses
+            </h2>
+            <p className="mt-4 text-wedding-text-light max-w-[58ch]">
+              Filtrez par distance, budget ou type de logement, mettez de côté vos coups de cœur,
+              puis réservez directement auprès de l&apos;établissement.
+            </p>
+          </div>
+
+          <div className="mt-8">
+            <LogementsExplorer />
           </div>
         </section>
 

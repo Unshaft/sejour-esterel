@@ -8,7 +8,7 @@
  */
 
 import { useEffect, useMemo, useState } from 'react'
-import { Heart, MapPin, Route, Search, SlidersHorizontal, X } from 'lucide-react'
+import { ArrowUp, ChevronDown, Heart, MapPin, Route, Search, SlidersHorizontal, X } from 'lucide-react'
 import {
   CATEGORIES,
   LOGEMENTS,
@@ -86,6 +86,14 @@ export default function LogementsExplorer() {
       ),
     [resultats]
   )
+
+  // 130 fiches empilées feraient une page interminable au doigt : chaque zone
+  // n'en montre qu'une poignée, dépliable à la demande. Tout changement de
+  // filtre remet les compteurs à zéro, sinon on rouvre sur une liste déjà longue.
+  const [limites, setLimites] = useState<Record<string, number>>({})
+  useEffect(() => {
+    setLimites({})
+  }, [recherche, zone, prix, categories, favorisSeuls])
 
   const nbFiltres =
     (zone !== 'toutes' ? 1 : 0) + prix.size + categories.size + (favorisSeuls ? 1 : 0) + (recherche ? 1 : 0)
@@ -263,7 +271,7 @@ export default function LogementsExplorer() {
               </div>
 
               <ul className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                {items.map((l) => (
+                {items.slice(0, limites[z.id] ?? PAS_INITIAL).map((l) => (
                   <CarteLogement
                     key={l.id}
                     logement={l}
@@ -272,11 +280,61 @@ export default function LogementsExplorer() {
                   />
                 ))}
               </ul>
+
+              {items.length > (limites[z.id] ?? PAS_INITIAL) && (
+                <div className="mt-6 text-center">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setLimites((l) => ({ ...l, [z.id]: (l[z.id] ?? PAS_INITIAL) + PAS_SUIVANT }))
+                    }
+                    className="btn-public btn-public-outline btn-public-sm"
+                  >
+                    <ChevronDown className="w-4 h-4" aria-hidden="true" />
+                    Voir {Math.min(PAS_SUIVANT, items.length - (limites[z.id] ?? PAS_INITIAL))} adresses de plus
+                  </button>
+                  <p className="mt-2 font-label text-[10px] uppercase tracking-[0.2em] text-wedding-text-light/70">
+                    {Math.min(limites[z.id] ?? PAS_INITIAL, items.length)} sur {items.length} affichées
+                  </p>
+                </div>
+              )}
             </section>
           ))}
         </div>
       )}
+
+      <RetourHaut />
     </div>
+  )
+}
+
+/** Nombre de fiches montrées d'emblée dans une zone, puis à chaque dépliage. */
+const PAS_INITIAL = 6
+const PAS_SUIVANT = 12
+
+/** Bouton de retour en haut — n'apparaît qu'une fois la liste engagée. */
+function RetourHaut() {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 1200)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  if (!visible) return null
+
+  return (
+    <button
+      type="button"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      aria-label="Revenir en haut de la page"
+      className="fixed right-4 bottom-4 z-40 w-12 h-12 flex items-center justify-center rounded-full border border-wedding-vert-dark/15 bg-white/90 text-wedding-vert-dark shadow-paper backdrop-blur-md transition-transform active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wedding-vert animate-fade-in"
+      style={{ bottom: 'max(env(safe-area-inset-bottom, 0px), 1rem)' }}
+    >
+      <ArrowUp className="w-5 h-5" aria-hidden="true" />
+    </button>
   )
 }
 

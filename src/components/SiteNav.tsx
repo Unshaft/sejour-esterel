@@ -11,8 +11,8 @@ import { Menu, X } from 'lucide-react'
 import { BrandLogo } from './Ornaments'
 
 const LINKS = [
-  { href: '#logements', label: 'Où dormir' },
   { href: '#conseils', label: 'Conseils' },
+  { href: '#logements', label: 'Où dormir' },
   { href: '#acces', label: 'Accès' },
   { href: '#contact', label: 'Contact' },
 ]
