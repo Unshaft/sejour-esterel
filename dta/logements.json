@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "moins-10-chez-anders",
+  "nom": "Chez Anders",
+  "adresse": "Chez anders, Eglise, 295 Chemin de, La Tuilière, 83600 Les Adrets-de-l'Estérel",
+  "type": "Gîte",
+  "categorie": "Gîte",
+  "prix": 1,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-cecillon-gite",
+  "nom": "Cecillon gîte",
+  "adresse": "Cecillon gîte, 8 Chem. Des Bastides, 83600 Les Adrets-de-l'Estérel",
+  "type": "Gîte / meublé",
+  "categorie": "Gîte",
+  "prix": 1,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-camping-les-philippons",
+  "nom": "Camping Les Philippons",
+  "adresse": "Camping Les Philippons, 410 Route de l'Argentière, RD 237, 83600 Les Adrets-de-l'Estérel",
+  "type": "Camping + locations/chalets",
+  "categorie": "Camping",
+  "prix": 1,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-logis-hotel-l-estirado-des-adrets",
+  "nom": "Logis Hôtel l'Estirado des Adrets",
+  "adresse": "Logis Hôtel l'Estirado des Adrets, 9 Chem. Panoramique, 83600 Les Adrets-de-l'Estérel",
+  "type": "Hôtel / chambres",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-garrigae-domaine-de-l-esterel",
+  "nom": "Garrigae Domaine de l’Estérel",
+  "adresse": "Garrigae Domaine de l'Esterel - restaurant, piscine & SPA Cinq Mondes, 805 Bd Darby, 83700 Saint-Raphaël",
+  "type": "Chambres & suites",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-villa-thao",
+  "nom": "Villa Thao",
+  "adresse": "Villa Thao, 37 All. de la Réserve, 83600 Fréjus",
+  "type": "Chambres d’hôtes + appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-domaine-de-l-esterel",
+  "nom": "Domaine de l’Estérel",
+  "adresse": "Domaine de l’Esterel, 329 Avenue l'Aumarinier Saint-Jean, 83600 Fréjus",
+  "type": "Hébergement / résidence de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-ormarine",
+  "nom": "Ormarine",
+  "adresse": "Ormarine, 188 impasse de la Croisette Parc résidentiel de l'Estérel - Saint-Jean de l'Estérel, 83600 Fréjus",
+  "type": "Appartement / location de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-le-mas-des-santolines",
+  "nom": "Le Mas des Santolines",
+  "adresse": "Le Mas des Sentolines, Av. de la Réserve, 83600 Fréjus",
+  "type": "Appartement / location de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-les-lucioles",
+  "nom": "Les Lucioles",
+  "adresse": "Les Lucioles, 93 Av. des Châtaigniers, 83600 Fréjus",
+  "type": "Appartement / location de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-studio-piscine-dans-l-esterel",
+  "nom": "Studio / piscine dans l’Estérel",
+  "adresse": "STUDIO/piscine dans l'Esterel, Saint Jean de Cannes, 150 Rue du Pic de l'Ours, 83600 Fréjus",
+  "type": "Studio / location de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-le-mas-des-cerises",
+  "nom": "Le Mas des Cerises",
+  "adresse": "Le Mas des Cerises, 67 Av. du Plan Pinet Saint-Jean, 83600 Fréjus",
+  "type": "Chambre d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-l-esterel-panoramique",
+  "nom": "L'Estérel Panoramique",
+  "adresse": "Chambre d'hôtes avec kitchenette \"vue mer l'Estérel panoramique\" petit déjeuner inclus, meilleur prix sur notre site web, Parc Résidentiel de l'Estérel, 83600 St Jean de l'Esterel",
+  "type": "Chambre d’hôtes avec kitchenette",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "St Jean de l'Esterel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-le-mas-de-la-verrerie",
+  "nom": "Le Mas de la Verrerie",
+  "adresse": "Le Mas de la Verrerie, 326 Chem. de la Verrerie, 83600 Les Adrets-de-l'Estérel",
+  "type": "Chambre d’hôtes / maison d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-le-sigalon",
+  "nom": "Le SIGALON",
+  "adresse": "Le SIGALON, 48 Imp. du Noisetier, 83600 Les Adrets-de-l'Estérel",
+  "type": "Chambre d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-chez-annabel-et-jan",
+  "nom": "Chez Annabel et Jan",
+  "adresse": "Chez Annabel et Jan, 83600 Les Adrets-de-l'Estérel",
+  "type": "Chambre d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-axelgaard",
+  "nom": "Axelgaard",
+  "adresse": "axelgaard, 72 Av. du Plan Pinet Saint-Jean, 83600 Fréjus",
+  "type": "Location de vacances / maison-appartement",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-champagne",
+  "nom": "Champagne",
+  "adresse": "CHAMPAGNE, 18 Av. des Roques Rousses, 83600 Fréjus",
+  "type": "Maison / villa de vacances",
+  "categorie": "Villa & maison",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-kerheol",
+  "nom": "KERHEOL",
+  "adresse": "KERHEOL Gite location de vacances holiday rental vue montagne piscine chauffée proche Cannes VAR 83, 78 Imp. de l'Avellan, 83600 Les Adrets-de-l'Estérel",
+  "type": "Gîte / meublé",
+  "categorie": "Gîte",
+  "prix": 2,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-le-vieux-chene-liege",
+  "nom": "Le Vieux Chêne-liège",
+  "adresse": "Le Vieux Chêne-liège, 57 Rue du Lac de l'Écureuil, 83600 Fréjus",
+  "type": "Gîte / meublé",
+  "categorie": "Gîte",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-soleil-rouge",
+  "nom": "SOLEIL ROUGE",
+  "adresse": "173 Chem. de la Poterie, 83600 Les Adrets-de-l'Estérel",
+  "type": "Gîte / meublé",
+  "categorie": "Gîte",
+  "prix": 2,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-le-bastidon",
+  "nom": "Le Bastidon",
+  "adresse": "825 Imp. Couvent Méridional, 83600 Les Adrets-de-l'Estérel",
+  "type": "Gîte / meublé",
+  "categorie": "Gîte",
+  "prix": 2,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-sawubona-earthship",
+  "nom": "Sawubona Earthship",
+  "adresse": "Maison écologique & insolite - Sawubona Earthship, 276 La Tuilière, 83600 Les Adrets-de-l'Estérel",
+  "type": "Hébergement insolite / chambre d’hôtes",
+  "categorie": "Insolite",
+  "prix": 3,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-domaine-des-oliviers-de-l-esterel",
+  "nom": "Domaine des Oliviers de l’Estérel",
+  "adresse": "Domaine Des Oliviers De L'Esterel, Saint Jean de, 83600 Cannes",
+  "type": "Domaine avec plusieurs villas/maisons",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Cannes",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-villa-la-bonne-etoile",
+  "nom": "Villa La Bonne Etoile",
+  "adresse": "Villa La Bonne Etoile, 367 Coutel et Pinée, 83600 Les Adrets-de-l'Estérel",
+  "type": "Villa / maison de vacances",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-mas-d-yeuse-villa",
+  "nom": "Mas d’Yeuse Villa",
+  "adresse": "Mas d'Yeuse Villa, 50 Imp. de l'Auriasque, 83600 Les Adrets-de-l'Estérel",
+  "type": "Villa / maison de vacances",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-villa-malivia",
+  "nom": "Villa Malivia",
+  "adresse": "Villa Malivia, 101 IMPASSE DU REDOLO, 317 Chem. Bauquier Anciennement, 83600 Les Adrets-de-l'Estérel",
+  "type": "Villa / maison de vacances",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-villa-desiree",
+  "nom": "Villa Désirée",
+  "adresse": "Villa Désirée, 483 Rue du Passage de la Cèpe, 83600 Fréjus",
+  "type": "Villa / maison de vacances",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-villa-green-galaxie",
+  "nom": "Villa Green Galaxie",
+  "adresse": "Villa Green Galaxie - Lieu de tournage photo et vidéo, 1 Av. Travers des Orangers, 83600 Fréjus",
+  "type": "Villa / maison d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-chez-brice-lova-villa-addolobrig",
+  "nom": "Chez Brice & Lova – Villa Addolobrig",
+  "adresse": "Chez Brice & Lova villa Addolobrig Guest House, 194 Rte de l'Église Villa Addolobrig, 83600 Les Adrets-de-l'Estérel",
+  "type": "Maison / villa de vacances",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Les Adrets-de-l'Estérel",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-10-villa-quercia-cote-d-azur",
+  "nom": "Villa Quercia Côte d’Azur",
+  "adresse": "Villa Quercia Côte D'Azur - (9P) Grand luxe vue mer oasis de calme, 243 All. des Iris de l'Escaillon, 83600 FréjusLe Vieux Chêne-liège",
+  "type": "Grande villa de luxe",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "moins-10"
+ },
+ {
+  "id": "moins-20-ibis-budget-frejus-capitou",
+  "nom": "ibis budget Fréjus Capitou",
+  "adresse": "Ibis Budget Fréjus Capitou, Zi Capitou, 1335 Av. Jean Lachenaud, 83600 Fréjus",
+  "type": "Motel / hôtel",
+  "categorie": "Hôtel",
+  "prix": 1,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-motel-esterel",
+  "nom": "Motel Esterel",
+  "adresse": "Motel Esterel, 1625 Av. de Fréjus, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 1,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-le-panel-paul-ricard",
+  "nom": "Le Panel – Paul Ricard",
+  "adresse": "Le Panel, Paul Ricard, 1189 Av. de Fréjus, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel / hébergement économique",
+  "categorie": "Hôtel",
+  "prix": 1,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-igesa-village-club-destremau",
+  "nom": "IGESA Village Club Destremau",
+  "adresse": "IGESA Village Club Destremau, igesa village club destremau, 1848 Rte de Cannes, 83600 Fréjus",
+  "type": "Village vacances / bungalows",
+  "categorie": "Village vacances",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-village-de-vacances-la-villa-clythia",
+  "nom": "Village de vacances La Villa Clythia",
+  "adresse": "Village de vacances \"La Villa Clythia\", 2754 Av. Henri Giraud, 83600 Fréjus",
+  "type": "Village vacances",
+  "categorie": "Village vacances",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-village-club-mileade-mandelieu-la-napoule",
+  "nom": "Village Club Miléade Mandelieu-la-Napoule",
+  "adresse": "Village Club Miléade Mandelieu-la-Napoule, 318 Rue du Capitaine de Corvette Marché BP 60939, 06210 Mandelieu-la-Napoule",
+  "type": "Village vacances",
+  "categorie": "Village vacances",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-camping-site-de-gorge-vent",
+  "nom": "Camping Site de Gorge Vent",
+  "adresse": "Camping Site de Gorge Vent, 654 Av. Général Norbert Riera, 83600 Fréjus",
+  "type": "Camping",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-camping-les-acacias",
+  "nom": "Camping Les Acacias",
+  "adresse": "studio moderne - Port de Mandelieu - Proche Mer, Ile Cannes Marina, 190 All. Calypso, 06210 Mandelieu-la-Napoule",
+  "type": "Camping",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-les-bungalows-du-golfe-camping-les-pruniers",
+  "nom": "Les Bungalows du Golfe – Camping Les Pruniers",
+  "adresse": "Les Bungalows du Golfe - Camping Les Pruniers, 118 Rte de la Pinéa, 06210 Mandelieu-la-Napoule",
+  "type": "Camping",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-boutique-hotel-la-corniche-d-or",
+  "nom": "Boutique Hotel La Corniche d’Or",
+  "adresse": "Boutique Hotel la Corniche d'Or, Pl. de la Fontaine, 06210 Mandelieu-la-Napoule",
+  "type": "Boutique-hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-hotel-des-bruyeres",
+  "nom": "Hôtel des Bruyères",
+  "adresse": "Hôtel des Bruyères, 1400 Av. de Fréjus, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-hotel-restaurant-horus",
+  "nom": "Hôtel Restaurant HORUS",
+  "adresse": "Hôtel Restaurant HORUS, 1583 Rte de Cannes, 83600 Fréjus",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-iem-hotel-les-3-chenes",
+  "nom": "IEM Hôtel « Les 3 Chênes »",
+  "adresse": "IEM Hotel \"Les 3 Chênes\", 1583 Rte de Cannes, 83600 Fréjus",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-hotel-cyano-by-soniho",
+  "nom": "Hôtel Cyano by Soniho",
+  "adresse": "Hôtel Cyano by Soniho, 422 Av. André Léotard, 83600 Fréjus",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-ibis-cannes-mandelieu",
+  "nom": "ibis Cannes Mandelieu",
+  "adresse": "Hotel ibis Cannes Mandelieu, 802 Bd des Écureuils, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel 3★",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-motel-capsol",
+  "nom": "Motel Capsol",
+  "adresse": "Motel Capsol, 446 Av. de la Mer, 06210 Mandelieu-la-Napoule",
+  "type": "Motel / appart'hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-zenitude-hotel-residences-frejus-la-tour-de-mare",
+  "nom": "Zenitude Hôtel-Résidences Fréjus La Tour de Mare",
+  "adresse": "Zenitude Hôtel-Résidences Fréjus La Tour de Mare (Comfort), 566 Via Aurélia, 83600 Fréjus",
+  "type": "Résidence hôtelière / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-zenitude-hotel-residences-cannes-mandelieu-comfort",
+  "nom": "Zenitude Hôtel-Résidences Cannes Mandelieu (Comfort)",
+  "adresse": "Zenitude Hôtel-Résidences Cannes Mandelieu (Comfort), 180 Chem. de l'Olivet, 06210 Mandelieu-la-Napoule",
+  "type": "Résidence hôtelière / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-zenitude-hotel-residences-mandelieu-la-napoule-village",
+  "nom": "Zenitude Hôtel-Résidences Mandelieu la Napoule Village",
+  "adresse": "Zenitude Hôtel-Résidences Mandelieu la Napoule Village (Comfort), 161 Rue Yves Brayer, 06210 Mandelieu-la-Napoule",
+  "type": "Résidence hôtelière / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-mimozas",
+  "nom": "Mimozas",
+  "adresse": "Mimozas, 4 Av. Gaston de Fontmichel, 06210 Mandelieu-la-Napoule",
+  "type": "Résidence tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-goelia-mandelieu-riviera-resort",
+  "nom": "Goélia Mandelieu Riviera Resort",
+  "adresse": "Goélia Mandelieu Riviera Resort, Riviera Resort, 4 Avenue Gaston de Fontmichel Résidence Goelia, 06210 Mandelieu-la-Napoule",
+  "type": "Résidence tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-residence-vacanceole-carre-marine",
+  "nom": "Résidence Vacancéole – Carré Marine",
+  "adresse": "Résidence Vacancéole - Carré Marine, 108 Rte de la Pinéa, 06210 Mandelieu-la-Napoule",
+  "type": "Résidence tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-les-jardins-du-golf-mandelieu",
+  "nom": "Les Jardins du Golf – Mandelieu",
+  "adresse": "Les Jardins Du Golf - Mandelieu, 574 Av. Gaston de Fontmichel, 06210 Mandelieu-la-Napoule",
+  "type": "Résidence tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-residence-les-rives-de-cannes-mandelieu",
+  "nom": "Résidence Les Rives de Cannes Mandelieu",
+  "adresse": "Résidence Les Rives de Cannes Mandelieu Pierre & Vacances, Rte de la Pinéa, 06210 Mandelieu-la-Napoule",
+  "type": "Résidence tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-studio-moderne-port-de-mandelieu-proche-mer",
+  "nom": "Studio moderne – Port de Mandelieu – Proche Mer",
+  "adresse": "Studio moderne - Port de Mandelieu - Proche Mer, Ile Cannes Marina, 190 All. Calypso, 06210 Mandelieu-la-Napoule",
+  "type": "Studio / location de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-villas-piscine-les-mimosas",
+  "nom": "Villas – Piscine Les Mimosas",
+  "adresse": "Agence les Mimosas, 69 Rue Roger Louis, 83600 Fréjus",
+  "type": "Villa(s) / location de vacances avec piscine",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-holiday-green-yelloh-village",
+  "nom": "Holiday Green – Yelloh! Village",
+  "adresse": "Holiday Green - Camping Fréjus 5 étoiles -Yelloh! Village, 1900 Route départementale 4, 1900 D4, 83600 Fréjus",
+  "type": "Camping",
+  "categorie": "Camping",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-domaine-de-barbossi-collection-barbossi",
+  "nom": "Domaine de Barbossi – Collection Barbossi",
+  "adresse": "Domaine de Barbossi - Collection Barbossi, 3300 Av. de Fréjus, 06210 Mandelieu-la-Napoule",
+  "type": "Domaine / hôtel 4★ + spa",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-riviera-beach-hotel",
+  "nom": "Riviera Beach Hotel",
+  "adresse": "Riviera Beach Hotel, Port de la Rague, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel / appartements",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-hotel-casarose",
+  "nom": "Hôtel CASAROSE",
+  "adresse": "Hôtel CASAROSE, 780 Av. de la Mer, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel 4★",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-pullman-cannes-mandelieu",
+  "nom": "Pullman Cannes Mandelieu",
+  "adresse": "Pullman Cannes Mandelieu, 605 Av. du Général de Gaulle, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel 4★ / resort",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-ilot-du-golf-bw-premier-collection",
+  "nom": "Îlot du Golf** BW Premier Collection**",
+  "adresse": "Îlot du Golf**** BW Premier Collection, 681 Av. de la Mer, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel 4★ / boutique-hôtel",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-hotel-la-calanque",
+  "nom": "Hôtel La Calanque",
+  "adresse": "Hôtel La Calanque, 404 Av. Henry Clews, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel 4★ / boutique-hôtel",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-la-bastide-du-clos-des-roses",
+  "nom": "La Bastide du Clos des Roses",
+  "adresse": "La Bastide du Clos des Roses, Lieu dit Sainte-Brigitte, Route Départementale 37, 1609 Rte de Malpasset, 83600 Fréjus",
+  "type": "Boutique-hôtel 4★ / domaine viticole",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-hotel-ermitage-de-l-oasis-spa",
+  "nom": "Hôtel Ermitage de L’Oasis & Spa",
+  "adresse": "Hôtel Ermitage de L'Oasis & Spa - Cannes Mandelieu, 26 Av. Henry Clews, 06210 Mandelieu-la-Napoule",
+  "type": "Hôtel 4★ / spa",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "moins-20"
+ },
+ {
+  "id": "moins-20-chateau-de-theoule-hotel-spa",
+  "nom": "Château de Théoule Hôtel & Spa",
+  "adresse": "Château de Théoule Hôtel & Spa, 55 Av. de Lérins, 06590 Théoule-sur-Mer",
+  "type": "Hôtel 5★ / hôtel-spa",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Théoule-sur-Mer",
+  "zone": "moins-20"
+ },
+ {
+  "id": "20-30-hotel-du-soleil",
+  "nom": "Hôtel du Soleil",
+  "adresse": "Hôtel du Soleil, 47 Bd Dom. du Soleil, 83700 Saint-Raphaël",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 1,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-ibis-budget-frejus-saint-raphael-centre-et-plage",
+  "nom": "ibis budget Fréjus Saint-Raphaël Centre et Plage",
+  "adresse": "Hotel ibis budget Fréjus Saint Raphäel Centre et Plage, Centre Le Ligure, 1074 Av. de Lattre de Tassigny, 83600 Fréjus",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 1,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-les-tourrades",
+  "nom": "Hôtel Les Tourrades",
+  "adresse": "Hotel les Tourrades, 2 Chem. de la Bastide Rouge, 06150 Cannes",
+  "type": "Hôtel 2★",
+  "categorie": "Hôtel",
+  "prix": 1,
+  "ville": "Cannes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-le-21-hotel-de-france",
+  "nom": "Le 21 Hôtel de France",
+  "adresse": "Le 21 Hotel de France, 21 Pl. Maréchal Gallieni, 83700 Saint-Raphaël",
+  "type": "Hôtel 2★",
+  "categorie": "Hôtel",
+  "prix": 1,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-centre-de-vacances-ufoval-74",
+  "nom": "Centre de Vacances UFOVAL 74",
+  "adresse": "Centre de Vacances UFOVAL 74, 2900 Bd du Suveret, 83700 Saint-Raphaël",
+  "type": "Centre / village de vacances",
+  "categorie": "Village vacances",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-parc-bellevue-cannes",
+  "nom": "Camping Parc Bellevue Cannes",
+  "adresse": "Camping Parc Bellevue Cannes, 67 Av. Maurice Chevalier, 06150 Cannes",
+  "type": "Camping / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Cannes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-capfun-aubredes",
+  "nom": "Camping Capfun – Aubrèdes",
+  "adresse": "Camping Capfun - Aubrèdes, 408 Chem. des Aubrèdes, 83480 Puget-sur-Argens",
+  "type": "Camping / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Puget-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-de-saint-aygulf-plage",
+  "nom": "Camping de Saint-Aygulf Plage",
+  "adresse": "Camping de Saint-Aygulf Plage, 270 Bd Salvarelli Quartier de, 83370 Fréjus",
+  "type": "Camping / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-les-hautes-vernedes",
+  "nom": "Camping Les Hautes Vernèdes",
+  "adresse": "Camping Les Hautes Vernèdes ****, 274 Chem. de l'Enghein du Loup, 83480 Puget-sur-Argens",
+  "type": "Camping 4★ / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Puget-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-le-montourey-camping-siblu",
+  "nom": "Le Montourey – Camping Siblu",
+  "adresse": "Le Montourey - Camping Siblu, 2399 Rue de Montourey, 83600 Fréjus",
+  "type": "Camping 4★ / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-tikayan-la-vallee-du-paradis",
+  "nom": "Camping Tikayan La Vallée du Paradis",
+  "adresse": "Camping Tikayan La Vallée du Paradis, 955 Av. du Gratadis, 83530 Agay",
+  "type": "Camping 4★ / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Agay",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-les-pecheurs",
+  "nom": "Camping Les Pêcheurs",
+  "adresse": "Camping Les Pêcheurs - Var, D7, 83520 Roquebrune-sur-Argens",
+  "type": "Camping / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Roquebrune-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-santa-lucia-vacances-andre-trigano",
+  "nom": "Camping Santa Lucia – Vacances André Trigano",
+  "adresse": "Camping Santa Lucia - Vacances André Trigano, 650 Av. des Magnolias, 83700 Saint-Raphaël",
+  "type": "Camping / mobil-homes",
+  "categorie": "Camping",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-lagrange-vacances-le-domaine-des-grands-pins",
+  "nom": "Lagrange Vacances – Le Domaine des Grands Pins",
+  "adresse": "Lagrange Vacances - Le Domaine des Grands Pins, 10 Av. des Pins, 83700 Saint-Raphaël",
+  "type": "Résidence de tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-residence-promenade-des-bains-pierre-vacances",
+  "nom": "Résidence Promenade des Bains Pierre & Vacances",
+  "adresse": "Résidence Promenade des Bains Pierre & Vacances, 109 Av. des Chévrefeuilles, 83700 Saint-Raphaël",
+  "type": "Résidence de tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-residence-la-corniche-d-or-pierre-vacances",
+  "nom": "Résidence La Corniche d'Or Pierre & Vacances",
+  "adresse": "Résidence La Corniche d'Or Pierre & Vacances, 569 Rte de la Corniche, 83700 Saint-Raphaël",
+  "type": "Résidence de tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-residence-le-mediterranee-vacances-bleues",
+  "nom": "Résidence Le Méditerranée – Vacances Bleues",
+  "adresse": "Résidence Le Méditerranée - Saint Raphaël - Vacances Bleues, 1 Av. Paul Doumer, 83700 Saint-Raphaël",
+  "type": "Résidence de tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-residence-villa-romana",
+  "nom": "Résidence Villa Romana",
+  "adresse": "Résidence Villa Romana, 265 Av. de Port Fréjus, 83600 Fréjus",
+  "type": "Résidence de tourisme / appartements",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-la-terrasse-de-santa-lucia",
+  "nom": "La Terrasse de Santa Lucia",
+  "adresse": "SOWELL Hôtels La Plage, 3235 Rte de la Corniche, 83700 Saint-Raphaël",
+  "type": "Appartement / location de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-chez-loursterel-residence-horizon-bleu",
+  "nom": "Chez Loursterel – Résidence Horizon Bleu",
+  "adresse": "Chez Loursterel, résidence Horizon Bleu, 1 bd Eugène Dequay, 06590 Théoule-sur-Mer",
+  "type": "Appartement / location de vacances",
+  "categorie": "Appartement & résidence",
+  "prix": 2,
+  "ville": "Théoule-sur-Mer",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-villa-pretorina-chambres-d-hotes",
+  "nom": "Villa Pretorina – Chambres d'Hôtes",
+  "adresse": "Villa Pretorina - Chambres d'Hôtes, RIVIERA FR, 7 Rue Aurélienne, 06150 Cannes",
+  "type": "Chambres d'hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Cannes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-b-b-les-voiles-de-valescure",
+  "nom": "B&B Les Voiles de Valescure",
+  "adresse": "B&B Les Voiles De Valescure, 206 Av. des Collines de Valescure, 83700 Saint-Raphaël",
+  "type": "Chambres d’hôtes / B&B",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-escale-de-charme",
+  "nom": "Escale de Charme",
+  "adresse": "ESCALE DE CHARME, PARC DES VEYSSIERES, 30 Rue Roger Martin du Gard, 83700 Saint-Raphaël",
+  "type": "Chambres d’hôtes / maison d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-la-garriniere",
+  "nom": "La Garrinière",
+  "adresse": "La Garriniere, 385 Av. du Serpolet, 83700 Saint-Raphaël",
+  "type": "Chambres d’hôtes / maison d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-l-ecureuil-de-l-esterel",
+  "nom": "L’Écureuil de l’Estérel",
+  "adresse": "L'Ecureuil de l'Estérel, 394 Av. des Rouges Gorges, 83700 Saint-Raphaël",
+  "type": "Chambres d’hôtes / maison d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-le-mas-du-bijou-bleu",
+  "nom": "Le Mas du Bijou Bleu",
+  "adresse": "Le Mas du Bijou Bleu, la, 521 Chemin Du Picoton, Flandine, 83480 Puget-sur-Argens",
+  "type": "Chambres d’hôtes / maison d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 2,
+  "ville": "Puget-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-les-palmiers",
+  "nom": "Les Palmiers",
+  "adresse": "Les Palmiers - Hôtel - Brasserie - Restaurant, 109 Bd de la Libération, 83600 Fréjus",
+  "type": "Hôtel / restaurant",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-the-hollywood-hotel-cannes-airport",
+  "nom": "The Hollywood Hotel Cannes Airport",
+  "adresse": "The Hollywood Hotel Cannes Airport, 245 Av. Francis Tonner, 06150 Cannes",
+  "type": "Hôtel / restaurant",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Cannes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-les-amandiers",
+  "nom": "Hôtel Les Amandiers",
+  "adresse": "Hôtel Les Amandiers, 874 Bd Alphonse Juin Maréchal de France, 83700 Saint-Raphaël",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-l-oasis",
+  "nom": "Hôtel L’Oasis",
+  "adresse": "Hotel l'oasis, 71 Imp. Jean Baptiste Charcot, 83600 Fréjus",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-le-flore",
+  "nom": "Hôtel Le Flore",
+  "adresse": "Hôtel Le Flore, 35 Rue Grisolle, 83600 Fréjus",
+  "type": "Hôtel 2★ / hôtel de charme",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-ibis-styles-frejus-saint-raphael",
+  "nom": "ibis Styles Fréjus Saint-Raphaël",
+  "adresse": "ibis Styles Fréjus Saint-Raphaël, 990 Av. du 8 Mai 1945, 83600 Fréjus",
+  "type": "Hôtel 3★",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-de-flore",
+  "nom": "Hôtel de Flore",
+  "adresse": "Hôtel de Flore, 56 Rue de la Liberté, 83700 Saint-Raphaël",
+  "type": "Hôtel 3★",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-b-b-hotel-cannes-la-bocca-plage",
+  "nom": "B&B HOTEL Cannes La Bocca Plage",
+  "adresse": "B&B HOTEL Cannes La Bocca Plage, 12-14 Av. des Arlucs, 06150 Cannes",
+  "type": "Hôtel 3★",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Cannes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-le-beau-sejour-saint-raphael",
+  "nom": "Hôtel Le Beau Séjour Saint-Raphaël",
+  "adresse": "Hôtel Le Beau Séjour Saint Raphaël - Bord de mer, 149 Prom. René Coty, 83700 Saint-Raphaël",
+  "type": "Hôtel 3★",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-le-thimothee",
+  "nom": "Hôtel Le Thimothée",
+  "adresse": "Hôtel Le Thimothée, 375 Bd Christian Lafon, 83700 Saint-Raphaël",
+  "type": "Hôtel 3★",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-l-arena-frejus",
+  "nom": "Hôtel l'Aréna Fréjus",
+  "adresse": "Hôtel l'Aréna Fréjus, 139 Av. du Général de Gaulle, 83600 Fréjus",
+  "type": "Hôtel 3★ / hôtel de charme",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-la-tour-de-l-esquillon",
+  "nom": "Hôtel La Tour de L'Esquillon",
+  "adresse": "Hôtel La Tour de L'Esquillon, 1 Place Vert Bisson, 06590 Théoule-sur-Mer",
+  "type": "Hôtel 3★ / charme / plage privée",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Théoule-sur-Mer",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-le-patio",
+  "nom": "Le Patio",
+  "adresse": "Le Patio, 48 Av. de Miramar, 06590 Théoule-sur-Mer",
+  "type": "Hôtel 3★ / hôtel-restaurant de charme",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Théoule-sur-Mer",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-le-beau-sejour",
+  "nom": "Hôtel Le Beau Séjour",
+  "adresse": "Hôtel Le Beau Séjour Saint Raphaël - Bord de mer, 149 Prom. René Coty, 83700 Saint-Raphaël",
+  "type": "Hôtel 3★ / bord de mer",
+  "categorie": "Hôtel",
+  "prix": 2,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-mercure-saint-raphael-centre-plage",
+  "nom": "Mercure Saint-Raphaël Centre Plage",
+  "adresse": "Mercure Saint Raphael Centre Plage, 101 Prom. René Coty, 83700 Saint-Raphaël",
+  "type": "Hôtel 4★ / bord de mer",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-domaine-de-montrouge",
+  "nom": "Domaine de Montrouge",
+  "adresse": "Domaine de Montrouge, 3276 Bd Jacques Baudino, 83700 Saint-Raphaël",
+  "type": "Domaine / maison d’hôtes",
+  "categorie": "Chambres d'hôtes",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-villa-colina",
+  "nom": "VILLA COLINA",
+  "adresse": "VILLA COLINA, 2363 Bd des Termes, 06210 Mandelieu-la-Napoule",
+  "type": "Villa / maison de vacances",
+  "categorie": "Villa & maison",
+  "prix": 3,
+  "ville": "Mandelieu-la-Napoule",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-mercure-cannes-mandelieu",
+  "nom": "Hôtel Mercure Cannes Mandelieu",
+  "adresse": "Hôtel Mercure Cannes Mandelieu, 6 All. des Cormorans, 06150 Cannes",
+  "type": "Hôtel",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Cannes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-chateau-de-la-tour",
+  "nom": "Hôtel Château de La Tour",
+  "adresse": "Hôtel Château de La Tour, 10 Av. Font de Veyre, 06150 Cannes",
+  "type": "Hôtel 4★",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Cannes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-best-western-plus-hotel-la-marina",
+  "nom": "Best Western Plus Hôtel La Marina",
+  "adresse": "Best Western Plus Hôtel La Marina, 30 Place de la Marina, 83700 Saint-Raphaël",
+  "type": "Hôtel 4★",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-van-der-valk-hotel-le-catalogne",
+  "nom": "Van der Valk Hôtel Le Catalogne",
+  "adresse": "Van der Valk Hôtel Le Catalogne, 290 Av. Lucien Bœuf, 83370 Fréjus",
+  "type": "Hôtel 4★",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-le-confidentiel-hotel-spa",
+  "nom": "Le Confidentiel Hôtel & Spa",
+  "adresse": "Le Confidentiel hôtel & Spa, 1090 Av. Colonel Brooke, 83700 Saint-Raphaël",
+  "type": "Hôtel 4★/ spa",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-mercure-thalasso-spa-port-frejus",
+  "nom": "Mercure Thalasso & Spa Port-Fréjus",
+  "adresse": "Mercure Thalasso & Spa Port Frejus, 16 Quai Dei Caravello Port-Fréjus Ouest, 83600 Fréjus",
+  "type": "Hôtel 4★ / spa & thalasso",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-sowell-hotels-la-plage",
+  "nom": "SOWELL Hôtels La Plage",
+  "adresse": "SOWELL Hôtels La Plage, 3235 Rte de la Corniche, 83700 Saint-Raphaël",
+  "type": "Hôtel 4★ / bord de mer",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-hotel-excelsior",
+  "nom": "Hôtel Excelsior",
+  "adresse": "Hôtel Excelsior - Côte d'Azur - Saint-Raphaël, Prom. René Coty, 83700 Saint-Raphaël",
+  "type": "Hôtel 4★ / hôtel de charme",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-golf-hotel-de-valescure-spa-nuxe",
+  "nom": "Golf Hôtel de Valescure & Spa Nuxe",
+  "adresse": "Golf Hôtel de Valescure & Spa Nuxe, 55 Av. Paul l'Hermite, 83700 Saint-Raphaël",
+  "type": "Hôtel 4★ / golf & spa",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-la-bastide-du-rocher-boutique-hotel-spa",
+  "nom": "La Bastide du Rocher Boutique Hôtel & Spa",
+  "adresse": "La Bastide du Rocher Boutique Hôtel & Spa, 776 b Chem. des Fourques, 83520 Roquebrune-sur-Argens",
+  "type": "Boutique-hôtel / spa",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Roquebrune-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-terre-blanche-hotel-spa-golf-resort",
+  "nom": "Terre Blanche Hotel Spa Golf Resort",
+  "adresse": "Terre Blanche, 3100 Rte de Bagnols-en-Forêt, 83440 Tourrettes",
+  "type": "Resort 5★ / suites & villas / golf & spa",
+  "categorie": "Hôtel",
+  "prix": 3,
+  "ville": "Tourrettes",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-douce-quietude-sandaya",
+  "nom": "Camping Douce Quiétude Sandaya",
+  "adresse": "Camping Douce Quiétude Sandaya - Saint-Raphaël - 5 étoiles, 3435 Bd Jacques Baudino, 83700 Saint-Raphaël",
+  "type": "Camping 5★ / mobil-homes",
+  "categorie": "Camping",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-yelloh-village-la-bastiane",
+  "nom": "Camping Yelloh Village La Bastiane",
+  "adresse": "Camping Yelloh Village La Bastiane, 1056 Chem. des Suvières, 83480 Puget-sur-Argens",
+  "type": "Camping 5★ / mobil-homes",
+  "categorie": "Camping",
+  "prix": 3,
+  "ville": "Puget-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-etoile-d-argens-sandaya",
+  "nom": "Camping Étoile d’Argens Sandaya",
+  "adresse": "Camping Étoile d'Argens Sandaya - Fréjus - 5 étoiles, 121 Chem. des Étangs, 83370 Fréjus",
+  "type": "Camping 5★ / mobil-homes",
+  "categorie": "Camping",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-esterel-caravaning",
+  "nom": "Esterel Caravaning",
+  "adresse": "Esterel Caravaning, 4 481 Av. des Golfs, 83530 Saint-Raphaël",
+  "type": "Camping 5★ / mobil-homes & hébergements locatifs",
+  "categorie": "Camping",
+  "prix": 3,
+  "ville": "Saint-Raphaël",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-le-domaine-du-colombier-sandaya",
+  "nom": "Camping Le Domaine du Colombier Sandaya",
+  "adresse": "Camping Le Domaine du Colombier Sandaya - Fréjus - 5 étoiles, 1052 Rue des Combattants d'Afrique du N, 83600 Fréjus",
+  "type": "Camping 5★ / mobil-homes & hébergements locatifs",
+  "categorie": "Camping",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-camping-la-pierre-verte",
+  "nom": "Camping La Pierre Verte",
+  "adresse": "Camping La Pierre Verte, 1880 D4 1880, 83600 Fréjus",
+  "type": "Camping 5★ / mobil-homes & hébergements locatifs",
+  "categorie": "Camping",
+  "prix": 3,
+  "ville": "Fréjus",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-tropicana-lodge",
+  "nom": "Tropicana Lodge",
+  "adresse": "Tropicana Lodge, Impasse de, La Maurette, 83520 Roquebrune-sur-Argens",
+  "type": "Insolites / lodges",
+  "categorie": "Insolite",
+  "prix": 2,
+  "ville": "Roquebrune-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-au-bois-fleuri",
+  "nom": "Au Bois Fleuri",
+  "adresse": "Au Bois Fleuri, 1241 Rte de Marchandise, 83520 Roquebrune-sur-Argens",
+  "type": "Insolites / lodges",
+  "categorie": "Insolite",
+  "prix": 2,
+  "ville": "Roquebrune-sur-Argens",
+  "zone": "20-30"
+ },
+ {
+  "id": "20-30-cabane-azur-mountain",
+  "nom": "Cabane Azur Mountain",
+  "adresse": "Cabane Azur Mountain, 626 Chem. des Encourdoules, 06220 Vallauris",
+  "type": "Insolites / lodges",
+  "categorie": "Insolite",
+  "prix": 3,
+  "ville": "Vallauris",
+  "zone": "20-30"
+ }
+]

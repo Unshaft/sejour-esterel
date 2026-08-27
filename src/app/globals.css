@@ -1,0 +1,174 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* ── Jetons de couleur — identiques au site de mariage ─────────────────── */
+@layer base {
+  :root {
+    --wedding-peach: #E48A6B;
+    --wedding-peach-light: #F4C7B1;
+    --wedding-rose: #F0A98C;
+    --wedding-rose-light: #F6DBCB;
+    --wedding-vert: #7E8A63;
+    --wedding-vert-dark: #586049;
+    --wedding-vert-light: #A7B28E;
+    --wedding-beige: #CDBA9B;
+    --wedding-beige-light: #F4F2E9;
+    --wedding-text: #36342A;
+    --wedding-text-light: #8A8473;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--wedding-beige-light);
+    color: var(--wedding-text);
+    /* Corps « La Correspondance » : 17px, interlignage 1.65, graisse 500
+       (la 400 de Cormorant est trop fine sur ivoire) */
+    font-size: 17px;
+    line-height: 1.65;
+    font-weight: 500;
+  }
+
+  /* Le display (Bodoni Moda) n'est chargé qu'en italique — l'italique EST le style de titre */
+  .font-heading {
+    font-style: italic;
+    letter-spacing: -0.015em;
+  }
+}
+
+@layer utilities {
+  /* Safe area iOS (encoche) — barre d'action fixe en bas d'écran */
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom, 0px), 0.75rem);
+  }
+
+  /* Rangées de puces défilables — la barre de défilement gênerait la lecture */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .scroll-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .stagger-1 { transition-delay: 0.08s; }
+  .stagger-2 { transition-delay: 0.16s; }
+  .stagger-3 { transition-delay: 0.24s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-animate {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .stagger-1, .stagger-2, .stagger-3 { transition-delay: 0s; }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .ornament-divider {
+    @apply flex items-center justify-center gap-4;
+  }
+
+  .ornament-divider::before,
+  .ornament-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to var(--line-direction, right), transparent, var(--wedding-vert-dark), transparent);
+  }
+
+  .ornament-divider::before { --line-direction: right; }
+  .ornament-divider::after { --line-direction: left; }
+
+  /* Logo de marque — masque CSS sur un aplat de couleur (cf. site de mariage) */
+  .brand-logo-mask {
+    background-color: currentColor;
+    -webkit-mask-image: url(/images/logo-mask.png);
+    mask-image: url(/images/logo-mask.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Grain de papier */
+  .noise-texture {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px 200px;
+  }
+
+  /* Ombres de papeterie — chaudes et stratifiées */
+  .shadow-paper {
+    box-shadow: 0 1px 2px rgba(54, 52, 42, 0.06), 0 12px 32px -18px rgba(54, 52, 42, 0.28);
+  }
+
+  .bg-gradient-hero {
+    background:
+      radial-gradient(ellipse at 18% 82%, rgba(249, 197, 177, 0.55) 0%, transparent 52%),
+      radial-gradient(ellipse at 82% 18%, rgba(216, 199, 166, 0.45) 0%, transparent 52%),
+      radial-gradient(ellipse at 65% 80%, rgba(249, 197, 177, 0.22) 0%, transparent 42%),
+      linear-gradient(160deg, #FCE8E0 0%, #F7F3EC 100%);
+  }
+
+  .bg-gradient-cta {
+    background: linear-gradient(135deg, var(--wedding-vert-dark) 0%, var(--wedding-vert) 50%, var(--wedding-vert-light) 100%);
+  }
+
+  /* ── Boutons publics — mêmes gestes que le site de mariage ─────────── */
+  .btn-public {
+    @apply cursor-pointer inline-flex items-center justify-center gap-2 min-h-[48px] px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  .btn-public-sm { @apply min-h-[44px] px-4 py-2.5; }
+  .btn-public-primary {
+    @apply bg-wedding-peach text-white font-semibold hover:brightness-95 focus-visible:ring-wedding-peach;
+    box-shadow: 0 4px 16px rgba(228, 138, 107, 0.3);
+  }
+  .btn-public-outline {
+    @apply border border-wedding-vert/35 text-wedding-vert hover:bg-wedding-vert/5 focus-visible:ring-wedding-vert;
+  }
+
+  /* Cachet « bon à savoir » — étiquette tamponnée, légèrement inclinée */
+  .cachet {
+    @apply border border-dashed border-wedding-vert/60 bg-[#F7F4EA] px-5 py-4;
+  }
+
+  /* Puce de filtre — petite capitale sans-serif, cochée en olive */
+  .chip {
+    @apply cursor-pointer inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 min-h-[38px] font-label text-[11px] font-medium uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wedding-vert focus-visible:ring-offset-2;
+  }
+  .chip-off {
+    @apply border-wedding-vert-dark/20 bg-white/60 text-wedding-text-light hover:border-wedding-vert/50 hover:text-wedding-vert-dark;
+  }
+  .chip-on {
+    @apply border-wedding-vert-dark bg-wedding-vert-dark text-white;
+  }
+}
