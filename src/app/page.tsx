@@ -196,8 +196,9 @@ export default function Page() {
                   cachets identiques qui se répètent. */}
               <dl className="scroll-animate stagger-1 border-t border-wedding-vert-dark/15">
                 <Note terme="Les prix">
-                  €, €€ et €€€ sont des ordres de grandeur relatifs : les tarifs varient selon les
-                  dates, la durée du séjour et les disponibilités en août 2027.
+                  € pour les adresses les plus abordables, €€€ pour les plus haut de gamme. C&apos;est
+                  un repère, pas un tarif : tout dépend des dates, de la durée du séjour et des
+                  disponibilités en août 2027.
                 </Note>
                 <Note terme="La réservation">
                   Aucune chambre n&apos;est pré-réservée en notre nom — chaque adresse se réserve
