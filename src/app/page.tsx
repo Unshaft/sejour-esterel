@@ -96,25 +96,24 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-8 md:px-14 pt-4 pb-14 md:pb-20 text-center">
             <FloralDivider className="mb-9" />
 
-            <h2
-              className="font-heading text-wedding-text leading-[1.08]"
-              style={{ fontSize: 'clamp(1.9rem, 5vw, 3rem)' }}
-            >
-              Un peu d&apos;anticipation, beaucoup de choix
-            </h2>
+            {/* Le mot d'accueil — c'est nous qui parlons, pas le site. */}
+            <p className="text-wedding-text-light max-w-[56ch] mx-auto">
+              Nous sommes très heureux de vous savoir des nôtres le 21 août 2027. La fête durera
+              tard, et vous serez bien mieux avec une chambre à quelques minutes qu&apos;avec une
+              route à faire. Alors nous avons pris les devants et ratissé la région pour vous :{' '}
+              <strong className="font-semibold text-wedding-vert-dark">{LOGEMENTS.length} adresses</strong>{' '}
+              autour de la Bastide, du camping à la villa, classées par temps de trajet.
+            </p>
 
             <p className="mt-5 text-wedding-text-light max-w-[56ch] mx-auto">
-              Si vous savez déjà que vous serez parmi nous, c&apos;est le moment idéal pour commencer
-              à regarder : plus vous vous y prenez tôt, plus vous aurez de choix.
+              Il ne vous reste plus qu&apos;à choisir la vôtre — et à venir.
             </p>
 
-            <p className="mt-4 text-wedding-text-light max-w-[56ch] mx-auto">
-              Nous avons parcouru la région pour vous —{' '}
-              <strong className="font-semibold text-wedding-vert-dark">{LOGEMENTS.length} adresses</strong>{' '}
-              autour de la Bastide, classées par temps de trajet.
+            <p className="mt-6 font-hand text-2xl text-wedding-vert-dark">
+              {sejour.couple.prenom1} &amp; {sejour.couple.prenom2}
             </p>
 
-            <p className="mt-6 font-heading text-xl text-wedding-vert-dark">{sejour.lieu.nom}</p>
+            <p className="mt-10 font-heading text-xl text-wedding-vert-dark">{sejour.lieu.nom}</p>
             <p className="text-sm text-wedding-text-light">{sejour.lieu.adresse}</p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3 max-w-3xl mx-auto">
@@ -168,29 +167,43 @@ export default function Page() {
                 className="font-heading text-wedding-text mt-3 leading-[1.08]"
                 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)' }}
               >
-                Bien préparer le week-end
+                Un peu d&apos;anticipation, beaucoup de choix
               </h2>
             </div>
 
-            {/* Trois cachets, rien d'autre : ce sont les seules choses qu'un
-                invité a vraiment besoin de savoir avant de réserver. */}
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Cachet className="-rotate-1 scroll-animate">
-                Le 21 août, c&apos;est le plein cœur de la saison sur la Côte d&apos;Azur. Les
-                adresses les plus proches de la Bastide sont peu nombreuses et partent vite :
-                mieux vaut s&apos;en occuper dans les prochains mois qu&apos;au printemps 2027.
-              </Cachet>
+            <div className="mt-8 grid gap-x-14 gap-y-10 md:grid-cols-2 items-start">
+              <div className="scroll-animate">
+                <p className="text-wedding-text-light leading-relaxed">
+                  Si vous savez déjà que vous serez parmi nous, c&apos;est le moment idéal pour
+                  commencer à regarder : plus vous vous y prenez tôt, plus vous aurez de choix.
+                </p>
+                <p className="mt-4 text-wedding-text-light leading-relaxed">
+                  Le 21 août, c&apos;est le plein cœur de la saison sur la Côte d&apos;Azur, et les
+                  adresses les plus proches de la Bastide sont peu nombreuses. Elles partent vite —
+                  mieux vaut s&apos;en occuper dans les prochains mois qu&apos;au printemps 2027.
+                </p>
 
-              <Cachet className="rotate-1 scroll-animate stagger-1">
-                Les indications de prix (€, €€, €€€) sont relatives et purement indicatives : les
-                tarifs varient selon les dates, la durée du séjour et les disponibilités en août 2027.
-              </Cachet>
+                <Cachet className="mt-8 -rotate-1">
+                  La plupart des établissements proposent l&apos;annulation gratuite : rien
+                  n&apos;empêche de réserver maintenant, quitte à ajuster plus tard.
+                </Cachet>
+              </div>
 
-              <Cachet className="-rotate-1 scroll-animate stagger-2">
-                Aucune chambre n&apos;est pré-réservée en notre nom : chaque adresse se réserve
-                librement, par téléphone ou en ligne. Les temps de trajet sont donnés à titre
-                indicatif, au départ de la Bastide.
-              </Cachet>
+              {/* Les trois notes factuelles, en marge — un feuillet, pas trois
+                  cachets identiques qui se répètent. */}
+              <dl className="scroll-animate stagger-1 border-t border-wedding-vert-dark/15">
+                <Note terme="Les prix">
+                  €, €€ et €€€ sont des ordres de grandeur relatifs : les tarifs varient selon les
+                  dates, la durée du séjour et les disponibilités en août 2027.
+                </Note>
+                <Note terme="La réservation">
+                  Aucune chambre n&apos;est pré-réservée en notre nom — chaque adresse se réserve
+                  librement, par téléphone ou en ligne.
+                </Note>
+                <Note terme="Les temps de trajet">
+                  Ils sont donnés à titre indicatif, en voiture, au départ de la Bastide.
+                </Note>
+              </dl>
             </div>
           </div>
         </section>
@@ -324,6 +337,16 @@ export default function Page() {
 }
 
 /* ── Pièces du carnet ────────────────────────────────────────────────── */
+
+/** Une note du carnet : terme en italique, précision en dessous. */
+function Note({ terme, children }: { terme: string; children: ReactNode }) {
+  return (
+    <div className="border-b border-wedding-vert-dark/15 py-4">
+      <dt className="font-heading text-lg text-wedding-vert-dark">{terme}</dt>
+      <dd className="m-0 mt-1 text-sm text-wedding-text-light leading-relaxed">{children}</dd>
+    </div>
+  )
+}
 
 /** Cachet « bon à savoir » — une étiquette tamponnée, légèrement de travers. */
 function Cachet({ children, className = '' }: { children: ReactNode; className?: string }) {

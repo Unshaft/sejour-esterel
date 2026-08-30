@@ -7,7 +7,7 @@
  * côté client, sans requête réseau, pour rester instantané au doigt sur mobile.
  */
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowUp, ChevronDown, Heart, MapPin, Route, Search, SlidersHorizontal, X } from 'lucide-react'
 import {
   CATEGORIES,
@@ -87,6 +87,22 @@ export default function LogementsExplorer() {
     [resultats]
   )
 
+  // Barre de tri réduite dès qu'elle se colle sous la navigation : déployée,
+  // elle occupe un tiers de l'écran d'un téléphone, ce qui ne laisse plus voir
+  // les fiches qu'elle sert à trier.
+  const sentinelleRef = useRef<HTMLDivElement>(null)
+  const [condense, setCondense] = useState(false)
+  useEffect(() => {
+    const sentinelle = sentinelleRef.current
+    if (!sentinelle) return
+    const observateur = new IntersectionObserver(
+      ([entree]) => setCondense(!entree.isIntersecting),
+      { rootMargin: '-80px 0px 0px 0px' }
+    )
+    observateur.observe(sentinelle)
+    return () => observateur.disconnect()
+  }, [])
+
   // 130 fiches empilées feraient une page interminable au doigt : chaque zone
   // n'en montre qu'une poignée, dépliable à la demande. Tout changement de
   // filtre remet les compteurs à zéro, sinon on rouvre sur une liste déjà longue.
@@ -95,8 +111,9 @@ export default function LogementsExplorer() {
     setLimites({})
   }, [recherche, zone, prix, categories, favorisSeuls])
 
-  const nbFiltres =
-    (zone !== 'toutes' ? 1 : 0) + prix.size + categories.size + (favorisSeuls ? 1 : 0) + (recherche ? 1 : 0)
+  /** Ce que le panneau replié contient — le badge du bouton secondaire. */
+  const nbFiltresSecondaires = prix.size + categories.size + (favorisSeuls ? 1 : 0)
+  const nbFiltres = nbFiltresSecondaires + (zone !== 'toutes' ? 1 : 0) + (recherche ? 1 : 0)
 
   function reinitialiser() {
     setRecherche('')
@@ -108,11 +125,16 @@ export default function LogementsExplorer() {
 
   return (
     <div>
+      {/* Sentinelle : dès qu'elle sort de l'écran, la barre est « collée » et
+          se réduit aux quatre distances — sinon elle mangerait un tiers de
+          l'écran pendant qu'on parcourt les fiches. */}
+      <div ref={sentinelleRef} aria-hidden="true" />
+
       {/* ── La barre de tri, épinglée sous la navigation ─────────────── */}
       <div className="sticky top-16 md:top-20 z-40 -mx-6 px-6 py-3 bg-wedding-beige-light/95 backdrop-blur-md border-y border-wedding-vert-dark/10">
-        <div className="max-w-6xl mx-auto space-y-3">
+        <div className={`max-w-6xl mx-auto ${condense ? 'space-y-0' : 'space-y-3'}`}>
           {/* Recherche */}
-          <div className="relative">
+          <div className={`relative ${condense ? 'hidden' : ''}`}>
             <Search
               className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-wedding-vert"
               aria-hidden="true"
@@ -137,14 +159,26 @@ export default function LogementsExplorer() {
             )}
           </div>
 
-          {/* Zones — le critère principal. La rangée défile sous le doigt ;
-              le bouton « Filtres » reste, lui, toujours atteignable à droite. */}
-          <div className="flex items-center gap-2">
-            <div className="flex-1 min-w-0 flex gap-2 overflow-x-auto no-scrollbar">
+          {/* Distance — le critère principal : les quatre choix sont visibles
+              d'un coup d'œil, sans défilement horizontal (2×2 au doigt, une
+              seule rangée serrée une fois la barre collée). */}
+          <div className={condense ? 'flex items-center gap-2' : ''}>
+            <p
+              className={`font-label text-[10px] font-medium uppercase tracking-[0.24em] text-wedding-vert mb-2 ${
+                condense ? 'hidden' : ''
+              }`}
+            >
+              Distance depuis la Bastide
+            </p>
+            <div
+              className={`grid gap-2 ${condense ? 'flex-1 min-w-0 grid-cols-4 gap-1.5' : 'grid-cols-2 sm:grid-cols-4'}`}
+            >
               <button
                 type="button"
                 onClick={() => setZone('toutes')}
-                className={`chip shrink-0 ${zone === 'toutes' ? 'chip-on' : 'chip-off'}`}
+                className={`chip justify-center ${condense ? 'chip-compact' : ''} ${
+                  zone === 'toutes' ? 'chip-on' : 'chip-off'
+                }`}
               >
                 Toutes
               </button>
@@ -153,26 +187,61 @@ export default function LogementsExplorer() {
                   key={z.id}
                   type="button"
                   onClick={() => setZone(zone === z.id ? 'toutes' : z.id)}
-                  className={`chip shrink-0 ${zone === z.id ? 'chip-on' : 'chip-off'}`}
+                  className={`chip justify-center ${condense ? 'chip-compact' : ''} ${
+                    zone === z.id ? 'chip-on' : 'chip-off'
+                  }`}
                 >
                   {z.court}
                 </button>
               ))}
             </div>
-            <button
-              type="button"
-              onClick={() => setFiltresOuverts((o) => !o)}
-              aria-expanded={filtresOuverts}
-              className={`chip shrink-0 ${filtresOuverts || prix.size + categories.size > 0 ? 'chip-on' : 'chip-off'}`}
-            >
-              <SlidersHorizontal className="w-3.5 h-3.5" aria-hidden="true" />
-              Filtres
-              {prix.size + categories.size > 0 && <span>{prix.size + categories.size}</span>}
-            </button>
+
+            {/* En version réduite, l'accès aux autres critères tient dans une
+                pastille : elle ramène en haut de la liste, barre dépliée. */}
+            {condense && (
+              <button
+                type="button"
+                onClick={() => {
+                  setFiltresOuverts(true)
+                  document.getElementById('logements')?.scrollIntoView({ behavior: 'smooth' })
+                }}
+                aria-label="Afficher tous les filtres"
+                className="relative shrink-0 w-10 h-10 flex items-center justify-center rounded-full border border-wedding-vert/40 bg-white/70 text-wedding-vert-dark transition-colors hover:border-wedding-vert focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wedding-vert"
+              >
+                <SlidersHorizontal className="w-4 h-4" aria-hidden="true" />
+                {nbFiltresSecondaires > 0 && (
+                  <span className="absolute -top-1 -right-1 inline-flex items-center justify-center min-w-4 h-4 rounded-full bg-wedding-peach px-1 text-[9px] text-white">
+                    {nbFiltresSecondaires}
+                  </span>
+                )}
+              </button>
+            )}
           </div>
 
+          {/* Le reste des critères, replié par défaut */}
+          <button
+            type="button"
+            onClick={() => setFiltresOuverts((o) => !o)}
+            aria-expanded={filtresOuverts}
+            className={`w-full min-h-[42px] items-center justify-center gap-2 rounded-full border border-dashed border-wedding-vert/50 bg-white/40 px-4 font-label text-[11px] font-medium uppercase tracking-[0.18em] text-wedding-vert-dark transition-colors hover:bg-white/70 hover:border-wedding-vert focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wedding-vert ${
+              condense ? 'hidden' : 'flex'
+            }`}
+          >
+            <SlidersHorizontal className="w-3.5 h-3.5" aria-hidden="true" />
+            {filtresOuverts ? 'Masquer les filtres' : 'Plus de filtres'}
+            {nbFiltresSecondaires > 0 && (
+              <span className="inline-flex items-center justify-center min-w-5 h-5 rounded-full bg-wedding-vert-dark px-1.5 text-[10px] text-white">
+                {nbFiltresSecondaires}
+              </span>
+            )}
+            <ChevronDown
+              className={`w-3.5 h-3.5 transition-transform ${filtresOuverts ? 'rotate-180' : ''}`}
+              aria-hidden="true"
+            />
+          </button>
+
           {/* Prix, catégories, favoris */}
-          {filtresOuverts && (
+          {filtresOuverts && !condense && (
             <div className="space-y-3 pt-1 animate-fade-in">
               <FiltreLigne titre="Budget">
                 {([1, 2, 3] as const).map((p) => (
@@ -227,7 +296,7 @@ export default function LogementsExplorer() {
           )}
 
           {/* Décompte */}
-          <p className="flex items-center gap-3 text-xs text-wedding-text-light">
+          <p className={`items-center gap-3 text-xs text-wedding-text-light ${condense ? 'hidden' : 'flex'}`}>
             <span aria-live="polite">
               <strong className="font-semibold text-wedding-vert-dark">{resultats.length}</strong>{' '}
               {resultats.length > 1 ? 'adresses' : 'adresse'} sur {LOGEMENTS.length}

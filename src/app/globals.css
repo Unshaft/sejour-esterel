@@ -165,6 +165,10 @@
   .chip {
     @apply cursor-pointer inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 min-h-[38px] font-label text-[11px] font-medium uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wedding-vert focus-visible:ring-offset-2;
   }
+  /* Version serrée — barre de tri réduite, quatre distances sur une rangée */
+  .chip-compact {
+    @apply min-h-[36px] px-1.5 text-[10px] tracking-[0.08em];
+  }
   .chip-off {
     @apply border-wedding-vert-dark/20 bg-white/60 text-wedding-text-light hover:border-wedding-vert/50 hover:text-wedding-vert-dark;
   }
