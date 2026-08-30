@@ -9,7 +9,7 @@
 
 import type { ReactNode } from 'react'
 import Image from 'next/image'
-import { BedDouble, Car, CalendarClock, MapPin, Mail, Smartphone } from 'lucide-react'
+import { BedDouble, MapPin, Mail, Smartphone } from 'lucide-react'
 import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
 import LogementsExplorer from '@/components/LogementsExplorer'
@@ -172,60 +172,25 @@ export default function Page() {
               </h2>
             </div>
 
-            <div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-3">
-              <Conseil
-                icon={<CalendarClock className="w-5 h-5" aria-hidden="true" />}
-                titre="Rien ne presse"
-                className="scroll-animate"
-              >
-                Il reste presque un an, et la liste ci-dessous est déjà faite : repérez deux ou
-                trois adresses qui vous plaisent, réservez quand vous le sentez. La plupart des
-                établissements proposent l&apos;annulation gratuite, alors autant poser une option
-                tranquillement.
-              </Conseil>
+            {/* Trois cachets, rien d'autre : ce sont les seules choses qu'un
+                invité a vraiment besoin de savoir avant de réserver. */}
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <Cachet className="-rotate-1 scroll-animate">
+                Le 21 août, c&apos;est le plein cœur de la saison sur la Côte d&apos;Azur. Les
+                adresses les plus proches de la Bastide sont peu nombreuses et partent vite :
+                mieux vaut s&apos;en occuper dans les prochains mois qu&apos;au printemps 2027.
+              </Cachet>
 
-              <Conseil
-                icon={<Car className="w-5 h-5" aria-hidden="true" />}
-                titre="Un accès tout simple"
-                className="scroll-animate stagger-1"
-              >
-                La Bastide est au bord de la Nationale 7, à cinq minutes de la sortie
-                d&apos;autoroute — on y arrive sans détour, de jour comme de nuit. Pour le retour,
-                à vous de voir : une chambre à quelques minutes, un conducteur désigné, ou un VTC
-                (Uber et Bolt couvrent tout le secteur).
-              </Conseil>
+              <Cachet className="rotate-1 scroll-animate stagger-1">
+                Les indications de prix (€, €€, €€€) sont relatives et purement indicatives : les
+                tarifs varient selon les dates, la durée du séjour et les disponibilités en août 2027.
+              </Cachet>
 
-              <Conseil
-                icon={<BedDouble className="w-5 h-5" aria-hidden="true" />}
-                titre="Regroupez-vous"
-                className="scroll-animate stagger-2"
-              >
-                Villas, gîtes et mobil-homes se partagent facilement à plusieurs familles : c&apos;est
-                souvent moins cher qu&apos;une chambre d&apos;hôtel, et bien plus agréable pour le
-                petit-déjeuner du dimanche.
-              </Conseil>
-            </div>
-
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
-              <div className="cachet -rotate-1 scroll-animate">
-                <p className="font-label text-[9px] font-semibold uppercase tracking-[0.3em] text-wedding-vert mb-1.5">
-                  Bon à savoir
-                </p>
-                <p className="text-sm text-wedding-text-light leading-relaxed">
-                  Les indications de prix (€, €€, €€€) sont relatives et purement indicatives : les
-                  tarifs varient selon les dates, la durée du séjour et les disponibilités en août 2027.
-                </p>
-              </div>
-              <div className="cachet rotate-1 scroll-animate stagger-1">
-                <p className="font-label text-[9px] font-semibold uppercase tracking-[0.3em] text-wedding-vert mb-1.5">
-                  Bon à savoir
-                </p>
-                <p className="text-sm text-wedding-text-light leading-relaxed">
-                  Aucune chambre n&apos;est pré-réservée en notre nom : chaque adresse se réserve
-                  librement, par téléphone ou en ligne. Les temps de trajet sont donnés à titre
-                  indicatif, au départ de la Bastide.
-                </p>
-              </div>
+              <Cachet className="-rotate-1 scroll-animate stagger-2">
+                Aucune chambre n&apos;est pré-réservée en notre nom : chaque adresse se réserve
+                librement, par téléphone ou en ligne. Les temps de trajet sont donnés à titre
+                indicatif, au départ de la Bastide.
+              </Cachet>
             </div>
           </div>
         </section>
@@ -360,24 +325,14 @@ export default function Page() {
 
 /* ── Pièces du carnet ────────────────────────────────────────────────── */
 
-function Conseil({
-  icon,
-  titre,
-  children,
-  className = '',
-}: {
-  icon: ReactNode
-  titre: string
-  children: ReactNode
-  className?: string
-}) {
+/** Cachet « bon à savoir » — une étiquette tamponnée, légèrement de travers. */
+function Cachet({ children, className = '' }: { children: ReactNode; className?: string }) {
   return (
-    <div className={className}>
-      <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/70 text-wedding-vert border border-wedding-vert/20">
-        {icon}
-      </span>
-      <h3 className="font-heading text-2xl text-wedding-vert-dark mt-4">{titre}</h3>
-      <p className="mt-2 text-wedding-text-light leading-relaxed">{children}</p>
+    <div className={`cachet ${className}`}>
+      <p className="font-label text-[9px] font-semibold uppercase tracking-[0.3em] text-wedding-vert mb-1.5">
+        Bon à savoir
+      </p>
+      <p className="text-sm text-wedding-text-light leading-relaxed">{children}</p>
     </div>
   )
 }
