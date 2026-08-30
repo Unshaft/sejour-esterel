@@ -182,11 +182,6 @@ export default function Page() {
                   adresses les plus proches de la Bastide sont peu nombreuses. Elles partent vite —
                   mieux vaut s&apos;en occuper dans les prochains mois qu&apos;au printemps 2027.
                 </p>
-
-                <Cachet className="mt-8 -rotate-1">
-                  La plupart des établissements proposent l&apos;annulation gratuite : rien
-                  n&apos;empêche de réserver maintenant, quitte à ajuster plus tard.
-                </Cachet>
               </div>
 
               {/* Les trois notes factuelles, en marge — un feuillet, pas trois
@@ -344,18 +339,6 @@ function Note({ terme, children }: { terme: string; children: ReactNode }) {
     <div className="border-b border-wedding-vert-dark/15 py-4">
       <dt className="font-heading text-lg text-wedding-vert-dark">{terme}</dt>
       <dd className="m-0 mt-1 text-sm text-wedding-text-light leading-relaxed">{children}</dd>
-    </div>
-  )
-}
-
-/** Cachet « bon à savoir » — une étiquette tamponnée, légèrement de travers. */
-function Cachet({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return (
-    <div className={`cachet ${className}`}>
-      <p className="font-label text-[9px] font-semibold uppercase tracking-[0.3em] text-wedding-vert mb-1.5">
-        Bon à savoir
-      </p>
-      <p className="text-sm text-wedding-text-light leading-relaxed">{children}</p>
     </div>
   )
 }
