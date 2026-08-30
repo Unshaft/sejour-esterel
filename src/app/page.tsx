@@ -104,8 +104,8 @@ export default function Page() {
 
             <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
               Nous vous avons donc préparé une petite liste de lieux où dormir, tout autour de la
-              Bastide. Rien d&apos;imposé, rien de réservé en votre nom : c&apos;est purement
-              informatif, simplement pour vous épargner des heures de recherche.
+              Bastide. Rien d&apos;imposé : c&apos;est purement informatif, simplement pour vous
+              épargner des heures de recherche.
             </p>
 
             <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
