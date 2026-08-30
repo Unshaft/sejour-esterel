@@ -96,7 +96,27 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-8 md:px-14 pt-4 pb-14 md:pb-20 text-center">
             <FloralDivider className="mb-9" />
 
-            <p className="font-heading text-2xl text-wedding-vert-dark">{sejour.lieu.nom}</p>
+            {/* Le mot d'accueil — c'est nous qui parlons, pas le site. */}
+            <p className="text-wedding-text-light max-w-[54ch] mx-auto">
+              Si vous êtes ici, à regarder les adresses autour de notre lieu de mariage, c&apos;est
+              que vous vous projetez déjà avec nous pour cette soirée — et elle sera magique.
+            </p>
+
+            <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
+              Nous vous avons donc préparé une petite liste de lieux où dormir, tout autour de la
+              Bastide. Rien d&apos;imposé, rien de réservé en votre nom : c&apos;est purement
+              informatif, simplement pour vous épargner des heures de recherche.
+            </p>
+
+            <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
+              En tout cas, nous sommes ravis de vous compter parmi nous.
+            </p>
+
+            <p className="mt-7 font-hand text-2xl text-wedding-vert-dark">
+              {sejour.couple.prenom1} &amp; {sejour.couple.prenom2}
+            </p>
+
+            <p className="mt-12 font-heading text-2xl text-wedding-vert-dark">{sejour.lieu.nom}</p>
             <p className="text-sm text-wedding-text-light">{sejour.lieu.adresse}</p>
 
             <p className="mt-6 text-wedding-text-light max-w-[52ch] mx-auto">
