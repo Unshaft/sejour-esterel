@@ -61,6 +61,26 @@ ACCENTS = {
 }
 
 
+# Le libelle du classeur decrit parfois l'annexe plutot que l'etablissement :
+# on tranche a la main pour ces quelques cas (cle = nom sans accents).
+CATEGORIES_FORCEES = {
+    'garrigae domaine de l’esterel': 'Hôtel',          # hotel-spa 4*, pas une chambre d'hotes
+    'villa thao': "Chambres d'hôtes",                   # « chambres d'hotes + appartements »
+    'axelgaard': 'Villa & maison',                      # maison entiere en location
+    'villa green galaxie': 'Villa & maison',            # villa d'hotes
+}
+
+# Coquilles du classeur (etoiles collees au nom, adresse a rallonge).
+NOMS_CORRIGES = {
+    'Îlot du Golf** BW Premier Collection**': 'Îlot du Golf **** BW Premier Collection',
+}
+ADRESSES_CORRIGEES = {
+    # Le nom du logement suivant s'est colle a la fin de l'adresse.
+    "Villa Quercia Côte D'Azur - (9P) Grand luxe vue mer oasis de calme, 243 All. des Iris de l'Escaillon, 83600 FréjusLe Vieux Chêne-liège":
+        "Villa Quercia Côte d'Azur, 243 All. des Iris de l'Escaillon, 83600 Fréjus",
+}
+
+
 def ville(adresse):
     """Derniere ville mentionnee dans l'adresse, deduite du code postal."""
     trouves = list(re.finditer(r'(\d{5})\s+([^,]+)', adresse))
@@ -107,11 +127,13 @@ def main():
             # On saute l'en-tete et le bas de feuille (legende, adresse du lieu).
             if nom == 'Logement' or not adresse or not typ:
                 continue
+            nom = NOMS_CORRIGES.get(nom, nom)
+            adresse = ADRESSES_CORRIGEES.get(adresse, adresse)
             cle = (strip_acc(nom), strip_acc(adresse))
             if cle in vus:
                 continue
             vus.add(cle)
-            cat = categorie(typ)
+            cat = CATEGORIES_FORCEES.get(strip_acc(nom).strip()) or categorie(typ)
             lignes.append({
                 'id': '%s-%s' % (zone, slug(nom)),
                 'nom': re.sub(r'\s+', ' ', nom),
@@ -123,9 +145,44 @@ def main():
                 'zone': zone,
             })
 
+    lignes = dedoublonner(lignes)
+
     with open('dta/logements.json', 'w', encoding='utf-8') as f:
         json.dump(lignes, f, ensure_ascii=False, indent=1)
     print('logements:', len(lignes))
+
+
+def dedoublonner(lignes):
+    """Ecarte les lignes qui ont herite de l'adresse d'une autre.
+
+    Plusieurs lignes du classeur portent l'adresse du logement voisin
+    (copier-coller) : elles enverraient les invites au mauvais endroit. Quand
+    deux lignes partagent une adresse, on garde celle dont le nom apparait
+    dans l'adresse, et on signale l'autre en console.
+    """
+    par_adresse = {}
+    for l in lignes:
+        par_adresse.setdefault(strip_acc(l['adresse']), []).append(l)
+
+    ecartes, gardees = [], []
+    for adresse, groupe in par_adresse.items():
+        if len(groupe) == 1:
+            gardees.append(groupe[0])
+            continue
+        # Un nom « appartient » a l'adresse si ses premiers mots s'y retrouvent.
+        def appartient(l):
+            mots = [m for m in re.split(r'\W+', strip_acc(l['nom'])) if len(m) > 3]
+            return sum(1 for m in mots[:3] if m in adresse)
+        groupe.sort(key=appartient, reverse=True)
+        gardees.append(groupe[0])
+        ecartes.extend(groupe[1:])
+
+    for l in ecartes:
+        print('  ecarte (adresse deja prise) :', l['nom'])
+
+    # On retrouve l'ordre du classeur, zone par zone.
+    ordre = {id(l): i for i, l in enumerate(lignes)}
+    return sorted(gardees, key=lambda l: ordre[id(l)])
 
 
 if __name__ == '__main__':

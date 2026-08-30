@@ -39,7 +39,7 @@ export default function Page() {
           <div className="relative h-[58vh] min-h-[380px] md:h-[64vh] md:min-h-[460px] w-full overflow-hidden">
             <Image
               src="/images/bastide-hero.jpg"
-              alt="Les tables dressées sous la véranda de la Bastide des Adrets"
+              alt="Les tables dressées sous la véranda de la Bastide de l'Auberge des Adrets"
               fill
               priority
               sizes="100vw"
@@ -48,13 +48,22 @@ export default function Page() {
               className="object-cover"
               style={{ objectPosition: '50% 22%' }}
             />
-            {/* Voile ivoire — le texte se lit en olive sur la photo, et la
-                photo se fond dans le papier du reste de la page. */}
+            {/* Deux voiles : l'un ivoire, qui fond la photo dans le papier de
+                la page ; l'autre, une nappe claire au centre, qui pose le texte
+                sur un fond calme — sans elle, le serif se perd dans la véranda. */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'linear-gradient(180deg, rgba(244,242,233,0.55) 0%, rgba(244,242,233,0.24) 34%, rgba(244,242,233,0.78) 78%, #F4F2E9 100%)',
+                  'linear-gradient(180deg, rgba(244,242,233,0.62) 0%, rgba(244,242,233,0.34) 34%, rgba(244,242,233,0.82) 78%, #F4F2E9 100%)',
+              }}
+              aria-hidden="true"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'radial-gradient(ellipse 70% 46% at 50% 50%, rgba(247,244,234,0.88) 0%, rgba(247,244,234,0.55) 55%, transparent 100%)',
               }}
               aria-hidden="true"
             />
@@ -66,18 +75,18 @@ export default function Page() {
 
             <div
               className="absolute inset-0 flex flex-col items-center justify-center text-center px-7"
-              style={{ textShadow: '0 1px 18px rgba(244,242,233,0.95), 0 1px 3px rgba(244,242,233,0.9)' }}
+              style={{ textShadow: '0 1px 16px rgba(247,244,234,0.95)' }}
             >
-              <p className="font-label text-[10px] md:text-[11px] font-medium uppercase tracking-[0.32em] text-wedding-vert-dark">
+              <p className="font-label text-[11px] md:text-xs font-semibold uppercase tracking-[0.3em] text-wedding-vert-dark">
                 {sejour.couple.prenom1} &amp; {sejour.couple.prenom2} · {sejour.date.full}
               </p>
               <h1
-                className="font-heading text-wedding-text mt-4 leading-[1.05] drop-shadow-[0_1px_12px_rgba(244,242,233,0.9)]"
-                style={{ fontSize: 'clamp(2.4rem, 7vw, 4.6rem)' }}
+                className="font-heading text-wedding-text mt-4 leading-[1.04]"
+                style={{ fontSize: 'clamp(2.1rem, 5.6vw, 4rem)' }}
               >
-                La Bastide des Adrets
+                La Bastide de l&apos;Auberge des Adrets
               </h1>
-              <p className="mt-4 font-label text-[10px] md:text-[11px] font-medium uppercase tracking-[0.28em] text-wedding-vert">
+              <p className="mt-4 font-label text-[11px] md:text-xs font-semibold uppercase tracking-[0.26em] text-wedding-vert-dark">
                 Les Adrets-de-l&apos;Estérel · Var
               </p>
             </div>
@@ -91,15 +100,18 @@ export default function Page() {
               className="font-heading text-wedding-text leading-[1.08]"
               style={{ fontSize: 'clamp(1.9rem, 5vw, 3rem)' }}
             >
-              Où poser ses valises
+              Un peu d&apos;anticipation, beaucoup de choix
             </h2>
 
             <p className="mt-5 text-wedding-text-light max-w-[56ch] mx-auto">
-              Nous nous marions au cœur de l&apos;Estérel, dans une bastide du XVII<sup>e</sup> siècle
-              posée entre pinèdes et collines rouges. La fête se termine tard et les routes sont
-              sinueuses : mieux vaut dormir sur place. Nous avons donc parcouru la région pour vous —{' '}
-              <strong className="font-semibold text-wedding-vert-dark">{LOGEMENTS.length} adresses</strong>,
-              classées par temps de trajet depuis la Bastide.
+              Si vous savez déjà que vous serez parmi nous, c&apos;est le moment idéal pour commencer
+              à regarder : plus vous vous y prenez tôt, plus vous aurez de choix.
+            </p>
+
+            <p className="mt-4 text-wedding-text-light max-w-[56ch] mx-auto">
+              Nous avons parcouru la région pour vous —{' '}
+              <strong className="font-semibold text-wedding-vert-dark">{LOGEMENTS.length} adresses</strong>{' '}
+              autour de la Bastide, classées par temps de trajet.
             </p>
 
             <p className="mt-6 font-heading text-xl text-wedding-vert-dark">{sejour.lieu.nom}</p>
@@ -163,22 +175,24 @@ export default function Page() {
             <div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-3">
               <Conseil
                 icon={<CalendarClock className="w-5 h-5" aria-hidden="true" />}
-                titre="Réservez tôt"
+                titre="Rien ne presse"
                 className="scroll-animate"
               >
-                Le 21 août, c&apos;est le plein cœur de la saison sur la Côte d&apos;Azur. Les
-                meilleures adresses des Adrets partent un an à l&apos;avance — visez 9 à 12 mois
-                avant, et privilégiez les annulations gratuites.
+                Il reste presque un an, et la liste ci-dessous est déjà faite : repérez deux ou
+                trois adresses qui vous plaisent, réservez quand vous le sentez. La plupart des
+                établissements proposent l&apos;annulation gratuite, alors autant poser une option
+                tranquillement.
               </Conseil>
 
               <Conseil
                 icon={<Car className="w-5 h-5" aria-hidden="true" />}
-                titre="Prévoyez le retour"
+                titre="Un accès tout simple"
                 className="scroll-animate stagger-1"
               >
-                La fête se termine tard et les routes de l&apos;Estérel sont sinueuses. Dormir à
-                moins de 10 minutes reste la meilleure option ; sinon, désignez un conducteur ou
-                réservez un VTC (Uber et Bolt couvrent Fréjus et Saint-Raphaël).
+                La Bastide est au bord de la Nationale 7, à cinq minutes de la sortie
+                d&apos;autoroute — on y arrive sans détour, de jour comme de nuit. Pour le retour,
+                à vous de voir : une chambre à quelques minutes, un conducteur désigné, ou un VTC
+                (Uber et Bolt couvrent tout le secteur).
               </Conseil>
 
               <Conseil
@@ -208,8 +222,8 @@ export default function Page() {
                 </p>
                 <p className="text-sm text-wedding-text-light leading-relaxed">
                   Aucune chambre n&apos;est pré-réservée en notre nom : chaque adresse se réserve
-                  librement, par téléphone ou en ligne. Les temps de trajet sont donnés au départ
-                  de la Bastide, hors circulation estivale.
+                  librement, par téléphone ou en ligne. Les temps de trajet sont donnés à titre
+                  indicatif, au départ de la Bastide.
                 </p>
               </div>
             </div>

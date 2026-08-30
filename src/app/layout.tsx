@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: 'Où dormir — Mariage Marianne & Killian',
   description:
-    "130 hébergements sélectionnés autour des Adrets-de-l'Estérel pour le week-end du mariage de Marianne & Killian, le 21 août 2027.",
+    "Les hébergements repérés autour de la Bastide de l'Auberge des Adrets pour le week-end du mariage de Marianne & Killian, le 21 août 2027.",
   icons: {
     icon: '/images/logo.svg',
     shortcut: '/images/logo.svg',
