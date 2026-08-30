@@ -96,25 +96,13 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-8 md:px-14 pt-4 pb-14 md:pb-20 text-center">
             <FloralDivider className="mb-9" />
 
-            {/* Le mot d'accueil — c'est nous qui parlons, pas le site. */}
-            <p className="text-wedding-text-light max-w-[56ch] mx-auto">
-              Nous sommes très heureux de vous savoir des nôtres le 21 août 2027. La fête durera
-              tard, et vous serez bien mieux avec une chambre à quelques minutes qu&apos;avec une
-              route à faire. Alors nous avons pris les devants et ratissé la région pour vous :{' '}
+            <p className="font-heading text-2xl text-wedding-vert-dark">{sejour.lieu.nom}</p>
+            <p className="text-sm text-wedding-text-light">{sejour.lieu.adresse}</p>
+
+            <p className="mt-6 text-wedding-text-light max-w-[52ch] mx-auto">
               <strong className="font-semibold text-wedding-vert-dark">{LOGEMENTS.length} adresses</strong>{' '}
               autour de la Bastide, du camping à la villa, classées par temps de trajet.
             </p>
-
-            <p className="mt-5 text-wedding-text-light max-w-[56ch] mx-auto">
-              Il ne vous reste plus qu&apos;à choisir la vôtre — et à venir.
-            </p>
-
-            <p className="mt-6 font-hand text-2xl text-wedding-vert-dark">
-              {sejour.couple.prenom1} &amp; {sejour.couple.prenom2}
-            </p>
-
-            <p className="mt-10 font-heading text-xl text-wedding-vert-dark">{sejour.lieu.nom}</p>
-            <p className="text-sm text-wedding-text-light">{sejour.lieu.adresse}</p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3 max-w-3xl mx-auto">
               {parZone.map((z) => (
