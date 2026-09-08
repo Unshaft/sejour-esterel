@@ -1,7 +1,8 @@
 /**
  * Lien de réservation propre à chaque adresse : le site de l'établissement
- * quand il en a un, sa fiche Booking sinon. Les adresses absentes de cette
- * table retombent sur la recherche Booking par nom (voir `reservationUrl`).
+ * quand il en a un, sa fiche Booking sinon. Deux adresses introuvables en
+ * fiche pointent vers la recherche Booking de leur ville. Les adresses
+ * absentes de cette table n'affichent pas de bouton « Réserver ».
  */
 
 export const LIENS_RESERVATION: Record<string, string> = {
@@ -14,7 +15,7 @@ export const LIENS_RESERVATION: Record<string, string> = {
   'moins-10-sawubona-earthship': 'https://www.booking.com/hotel/fr/sawubona.html',
   'moins-10-domaine-des-oliviers-de-l-esterel': 'http://www.domaines-de-provence.com/',
   'moins-10-villa-la-bonne-etoile': 'https://www.booking.com/hotel/fr/villa-la-bonne-etoile-the-perfect-family-oasis.html',
-  'moins-10-villa-malivia': 'https://www.booking.com/hotel/fr/appartement-villa-malivia.html',
+  'moins-10-villa-malivia': 'https://www.booking.com/searchresults.fr.html?ss=Les%20Adrets-de-l%27Est%C3%A9rel',
   'moins-10-villa-quercia-cote-d-azur': 'https://www.booking.com/hotel/fr/villa-quercia.html',
   'moins-20-ibis-budget-frejus-capitou': 'https://all.accor.com/hotel/2550/index.fr.shtml',
   'moins-20-motel-esterel': 'https://motelesterel.wixsite.com/motelesterel',
@@ -26,7 +27,7 @@ export const LIENS_RESERVATION: Record<string, string> = {
   'moins-20-les-bungalows-du-golfe-camping-les-pruniers': 'https://www.bungalow-camping.com/',
   'moins-20-boutique-hotel-la-corniche-d-or': 'https://www.cornichedor.com/',
   'moins-20-hotel-restaurant-horus': 'https://www.booking.com/hotel/fr/horus.html',
-  'moins-20-iem-hotel-les-3-chenes': 'https://www.booking.com/hotel/fr/les-3-chaanes.html',
+  'moins-20-iem-hotel-les-3-chenes': 'https://www.booking.com/searchresults.fr.html?ss=Fr%C3%A9jus',
   'moins-20-hotel-cyano-by-soniho': 'https://www.soniho.com/hotels/hotel-cyano-frejus/',
   'moins-20-ibis-cannes-mandelieu': 'https://all.accor.com/hotel/6518/index.fr.shtml',
   'moins-20-motel-capsol': 'https://capsolmandelieu.fr/',
