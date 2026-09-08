@@ -98,18 +98,29 @@ export default function Page() {
 
             {/* Le mot d'accueil — c'est nous qui parlons, pas le site. */}
             <p className="text-wedding-text-light max-w-[54ch] mx-auto">
-              Si vous êtes ici, à regarder les adresses autour de notre lieu de mariage, c&apos;est
-              que vous vous projetez déjà avec nous pour cette soirée — et elle sera magique.
+              Le 21 août 2027, nous nous retrouverons au cœur de la Provence pour célébrer, rire,
+              danser, trinquer… et surtout profiter de tous ceux qui nous sont chers.
             </p>
 
             <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
-              Nous vous avons donc préparé une petite liste de lieux où dormir, tout autour de la
-              Bastide. Rien d&apos;imposé : c&apos;est purement informatif, simplement pour vous
-              épargner des heures de recherche.
+              En attendant ce joli jour, nous avons réuni ici quelques adresses pour vous aider à
+              trouver votre petit coin pour le week-end, tout près de la Bastide.
             </p>
 
             <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
-              En tout cas, nous sommes ravis de vous compter parmi nous.
+              Hôtels, maisons d&apos;hôtes, locations… de quoi trouver votre petit nid pour profiter
+              pleinement de ces quelques jours en Provence.
+            </p>
+
+            <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
+              Prenez le temps de vous promener sur le site, de noter quelques adresses et de
+              commencer doucement à vous projeter… sans trop tarder non plus. La Provence est très
+              convoitée au mois d&apos;août, alors autant regarder tranquillement dès maintenant pour
+              avoir encore le choix !
+            </p>
+
+            <p className="mt-5 text-wedding-text-light max-w-[54ch] mx-auto">
+              Nous, en tout cas, on a déjà très hâte de vous y retrouver.
             </p>
 
             <p className="mt-7 font-hand text-2xl text-wedding-vert-dark">
@@ -121,7 +132,7 @@ export default function Page() {
 
             <p className="mt-6 text-wedding-text-light max-w-[52ch] mx-auto">
               <strong className="font-semibold text-wedding-vert-dark">{LOGEMENTS.length} adresses</strong>{' '}
-              autour de la Bastide, du camping à la villa, classées par temps de trajet.
+              autour de la Bastide, classées par temps de trajet.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3 max-w-3xl mx-auto">
@@ -196,9 +207,9 @@ export default function Page() {
                   cachets identiques qui se répètent. */}
               <dl className="scroll-animate stagger-1 border-t border-wedding-vert-dark/15">
                 <Note terme="Les prix">
-                  € pour les adresses les plus abordables, €€€ pour les plus haut de gamme. C&apos;est
-                  un repère, pas un tarif : tout dépend des dates, de la durée du séjour et des
-                  disponibilités en août 2027.
+                  De € à €€€, selon les adresses. Ces indications sont simplement là pour vous aider
+                  à vous repérer, les tarifs pouvant varier selon les dates, la durée du séjour et
+                  les disponibilités.
                 </Note>
                 <Note terme="La réservation">
                   Aucune chambre n&apos;est pré-réservée en notre nom — chaque adresse se réserve
