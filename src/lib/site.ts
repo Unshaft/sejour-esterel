@@ -1,3 +1,5 @@
+import { LIENS_RESERVATION } from '@/data/liens'
+
 /**
  * Constantes du séjour — reprises du site de mariage (src/lib/theme.ts)
  * et de l'onglet « - 10 min » du classeur des logements.
@@ -36,7 +38,15 @@ export function itineraireUrl(depuis: string): string {
   )
 }
 
-/** Recherche du nom de l'établissement sur Booking.com. */
-export function bookingUrl(nom: string, ville: string): string {
-  return `https://www.booking.com/searchresults.fr.html?ss=${encodeURIComponent(`${nom} ${ville}`)}`
+/**
+ * Où envoyer quelqu'un qui veut réserver : le site de l'établissement (ou sa
+ * fiche Booking) quand on l'a relevé, sinon la recherche Booking par nom —
+ * jamais la page d'accueil d'un comparateur.
+ */
+export function reservationUrl(id: string, nom: string, ville: string): string {
+  return (
+    LIENS_RESERVATION[id] ??
+    `https://www.booking.com/searchresults.fr.html?ss=${encodeURIComponent(`${nom} ${ville}`)}`
+  )
 }
+

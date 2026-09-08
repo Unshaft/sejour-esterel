@@ -18,7 +18,7 @@ import {
   type Logement,
   type ZoneId,
 } from '@/data/logements'
-import { bookingUrl, itineraireUrl, mapsUrl } from '@/lib/site'
+import { itineraireUrl, mapsUrl, reservationUrl } from '@/lib/site'
 
 const FAVORIS_KEY = 'sejour-esterel:favoris'
 
@@ -426,7 +426,7 @@ function CarteLogement({
   favori: boolean
   onFavori: () => void
 }) {
-  const { nom, adresse, type, prix, ville } = logement
+  const { id, nom, adresse, type, prix, ville } = logement
 
   return (
     <li className="group relative flex flex-col rounded-2xl border border-wedding-vert-dark/12 bg-white/70 p-5 shadow-paper transition-colors hover:border-wedding-vert/40">
@@ -480,7 +480,7 @@ function CarteLogement({
             <Route className="w-3.5 h-3.5" aria-hidden="true" />
           </LienDiscret>
           <a
-            href={bookingUrl(nom, ville)}
+            href={reservationUrl(id, nom, ville)}
             target="_blank"
             rel="noopener noreferrer"
             className="min-h-[40px] inline-flex items-center rounded-full border border-wedding-vert/35 px-3.5 font-label text-[10px] font-medium uppercase tracking-[0.16em] text-wedding-vert-dark transition-colors hover:bg-wedding-vert/8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wedding-vert"
