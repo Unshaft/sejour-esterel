@@ -1,6 +1,6 @@
 /**
  * Lien de réservation propre à chaque adresse : le site de l'établissement
- * quand il en a un, sa fiche Booking sinon. Deux adresses introuvables en
+ * quand il en a un, sa fiche Booking sinon. Quelques adresses introuvables en
  * fiche pointent vers la recherche Booking de leur ville. Les adresses
  * absentes de cette table n'affichent pas de bouton « Réserver ».
  */
@@ -67,7 +67,7 @@ export const LIENS_RESERVATION: Record<string, string> = {
   '20-30-villa-pretorina-chambres-d-hotes': 'https://www.booking.com/hotel/fr/villa-pretorina.html',
   '20-30-b-b-les-voiles-de-valescure': 'https://www.booking.com/hotel/fr/b-amp-b-les-voiles-de-valescure.fr.html',
   '20-30-la-garriniere': 'https://www.lagarriniere.com/fr',
-  '20-30-l-ecureuil-de-l-esterel': 'https://www.booking.com/hotel/fr/l-39-ecureuil-de-l-39-esterel.fr.html',
+  '20-30-l-ecureuil-de-l-esterel': 'https://www.booking.com/searchresults.fr.html?ss=Saint-Rapha%C3%ABl',
   '20-30-le-mas-du-bijou-bleu': 'https://www.lemasdubijoubleu.com/',
   '20-30-les-palmiers': 'https://www.booking.com/hotel/fr/les-palmiers.html',
   '20-30-the-hollywood-hotel-cannes-airport': 'https://www.booking.com/hotel/fr/campanile-cannes-mandelieu.html',
