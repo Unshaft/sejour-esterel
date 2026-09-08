@@ -39,14 +39,11 @@ export function itineraireUrl(depuis: string): string {
 }
 
 /**
- * Où envoyer quelqu'un qui veut réserver : le site de l'établissement (ou sa
- * fiche Booking) quand on l'a relevé, sinon la recherche Booking par nom —
- * jamais la page d'accueil d'un comparateur.
+ * Le site de l'établissement, ou sa fiche Booking. `undefined` pour les
+ * adresses dont on n'a pas relevé de lien : la carte n'affiche alors pas de
+ * bouton « Réserver » plutôt que d'envoyer vers une recherche approximative.
  */
-export function reservationUrl(id: string, nom: string, ville: string): string {
-  return (
-    LIENS_RESERVATION[id] ??
-    `https://www.booking.com/searchresults.fr.html?ss=${encodeURIComponent(`${nom} ${ville}`)}`
-  )
+export function reservationUrl(id: string): string | undefined {
+  return LIENS_RESERVATION[id]
 }
 
